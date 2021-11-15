@@ -8,6 +8,9 @@ gem 'sinatra'
 gem 'sinatra-contrib'
 gem 'rspec'
 gem 'capybara'
+gem 'simplecov'
+gem 'simplecov-console'
+gem 'rubocop'
 
 
 # gem "rails"

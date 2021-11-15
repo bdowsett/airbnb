@@ -1,7 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 
-class BookmarkManager < Sinatra::Base
+class Airbnb < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
   end
