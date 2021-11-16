@@ -11,5 +11,6 @@ gem 'simplecov'
 gem 'simplecov-console'
 gem 'sinatra'
 gem 'sinatra-contrib'
+gem 'pg'
 
 # gem "rails"
