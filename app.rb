@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
+require  './lib/space'
 
 class Airbnb < Sinatra::Base
   enable :sessions
@@ -8,7 +9,7 @@ class Airbnb < Sinatra::Base
   end
 
   get '/' do
-    @listing = [session[:space_name], session[:description], session[:location], session[:price]]
+    @listing = Space.all
     erb :index
   end
 
@@ -17,10 +18,7 @@ class Airbnb < Sinatra::Base
   end
   
   post '/add_space' do
-    session[:space_name] = params[:space_name]
-    session[:description] = params[:description]
-    session[:location] = params[:location]
-    session[:price] = params[:price]
+    Space.create(params[:space_name], params[:description], params[:location], params[:price])
     redirect '/'
   end
 
