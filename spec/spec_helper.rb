@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'setup_test_database'
 require 'simplecov'
 require 'simplecov-console'
 require './lib/space'
@@ -15,7 +16,7 @@ SimpleCov.start
 ENV['RACK_ENV'] = 'test'
 RSpec.configure do |config|
   config.before(:each) do
-    Space.all.clear
+    setup_test_database
   end
 end
 

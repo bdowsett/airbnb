@@ -4,6 +4,9 @@
 
 <div>
      <% @listing.each do |x|%>
-     <%= x %>
+     <%= x.name %><br>
+     <%= x.desc %><br>
+     <%= x.location %><br>
+     <%= x.price %><br>
      <%end%>
 </div>

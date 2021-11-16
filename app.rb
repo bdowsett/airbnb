@@ -10,6 +10,9 @@ class Airbnb < Sinatra::Base
 
   get '/' do
     @listing = Space.all
+
+
+
     erb :index
   end
 
