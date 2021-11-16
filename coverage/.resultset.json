@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/willsharkey/Desktop/full_course/airbnb/app.rb": {
+      "/Users/bendowsett/Desktop/Projects/airbnb/app.rb": {
         "lines": [
           1,
           1,
@@ -33,7 +33,7 @@
           null
         ]
       },
-      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/add_a_new_space_spec.rb": {
+      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/add_a_new_space_spec.rb": {
         "lines": [
           1,
           null,
@@ -53,8 +53,20 @@
           null,
           null
         ]
+      },
+      "/Users/bendowsett/Desktop/Projects/airbnb/spec/space_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       }
     },
-    "timestamp": 1637060509
+    "timestamp": 1637062983
   }
 }
