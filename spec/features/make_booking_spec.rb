@@ -1,6 +1,6 @@
 feature 'User is able to make a booking' do
 
-    scenario 'User can enter a name and a date of the bokking they want to make' do
+    scenario 'User can enter a name and a date of the booking they want to make' do
         
         visit('/')
         click_link 'Add listing'

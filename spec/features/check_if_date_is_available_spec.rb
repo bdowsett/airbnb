@@ -1,4 +1,4 @@
-feature 'User can check if date is available to book' do
+xfeature 'User can check if date is available to book' do
 
     scenario 'Dates that are already booked are no longer available' do
         visit('/')

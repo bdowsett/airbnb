@@ -4,6 +4,7 @@ require 'setup_test_database'
 require 'simplecov'
 require 'simplecov-console'
 require './lib/space'
+require './lib/booking'
 
 SimpleCov.formatter = SimpleCov::Formatter::MultiFormatter.new([
                                                                  SimpleCov::Formatter::Console

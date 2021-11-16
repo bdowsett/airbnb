@@ -1,6 +1,7 @@
 require 'sinatra/base'
 require 'sinatra/reloader'
 require  './lib/space'
+require  './lib/booking'
 
 class Airbnb < Sinatra::Base
   enable :sessions
@@ -27,8 +28,8 @@ class Airbnb < Sinatra::Base
   end
 
   post '/book_space' do
-    p params
-   redirect '/booking_confirmation'
+    Booking.create(params[:space_name], params[:date])
+    redirect '/booking_confirmation'
   end
 
   get '/booking_confirmation' do
