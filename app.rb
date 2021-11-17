@@ -28,12 +28,12 @@ class Airbnb < Sinatra::Base
   end
 
   post '/book_space' do
-    Booking.create(params[:space_name], params[:date])
+    session[:booking] = Booking.create(params[:space_name], params[:date])
     redirect '/booking_confirmation'
   end
 
   get '/booking_confirmation' do
-    erb :confirmation
+    erb session[:booking]
   end
 
   run! if app_file == $0
