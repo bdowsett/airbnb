@@ -1,3 +1,12 @@
+<% if @username.nil? %>
+<a href="/log_in">
+     <button>Log in</button>
+   </a>
+<%  else %>
+Welcome <%=@username%>
+<%  end %>
+
+
 <div>
 <a href="/add_space">
        <button>Add listing</button>

@@ -12,6 +12,7 @@ class Airbnb < Sinatra::Base
 
   get '/' do
     @listing = Space.all
+    @username = session[:current_username]
     erb :index
   end
 
@@ -42,18 +43,29 @@ class Airbnb < Sinatra::Base
   end
 
   post '/create_account' do
-  session[:account] = Account.create(params[:username], params[:email], params[:mob], params[:password])
-  redirect '/creation_confirmation'
+    session[:account] = Account.create(params[:username], params[:email], params[:mob], params[:password])
+    redirect '/creation_confirmation'
   end
 
   get '/creation_confirmation' do
     erb session[:account]
   end
 
-  get 'log_in' do
-
+  get '/log_in' do
+    erb :login
   end
 
+  post '/log_in' do
+
+    session[:logged_in] = Account.valid_account(params[:username], params[:password])
+    session[:current_username] = params[:username] if session[:logged_in] == :login_successful
+    p session[:logged_in]
+    redirect '/login_confirmation'
+  end
+
+  get '/login_confirmation' do
+    erb session[:logged_in]
+  end
 
   run! if app_file == $0
 end
