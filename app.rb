@@ -36,5 +36,23 @@ class Airbnb < Sinatra::Base
     erb session[:booking]
   end
 
+  get '/create_account' do
+  erb :account_creation
+  end
+
+  post '/create_account' do
+  p params 
+  redirect '/creation_confirmation'
+  end
+
+  get '/creation_confirmation' do
+    erb :creation_success
+  end
+
+  get 'log_in' do
+
+  end
+
+
   run! if app_file == $0
 end
