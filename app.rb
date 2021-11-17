@@ -2,6 +2,7 @@ require 'sinatra/base'
 require 'sinatra/reloader'
 require  './lib/space'
 require  './lib/booking'
+require  './lib/account'
 
 class Airbnb < Sinatra::Base
   enable :sessions
@@ -41,12 +42,12 @@ class Airbnb < Sinatra::Base
   end
 
   post '/create_account' do
-  p params 
+  session[:account] = Account.create(params[:username], params[:email], params[:mob], params[:password])
   redirect '/creation_confirmation'
   end
 
   get '/creation_confirmation' do
-    erb :creation_success
+    erb session[:account]
   end
 
   get 'log_in' do
