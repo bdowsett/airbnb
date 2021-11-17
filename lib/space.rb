@@ -10,10 +10,9 @@ class Space
      @desc = desc
      @location = location
      @price = price
-     @account = account
    end
 
-   def self.create(name, desc, location, price, account)
+   def self.create(name, desc, location, price)
       if ENV['RACK_ENV'] == 'test'
          connection = PG.connect(dbname: 'airbnb_test')
       else
@@ -32,14 +31,6 @@ class Space
      result.map { |space| Space.new(
         space['id'], space['name'], space['description'], space['location'], 
         space['price']) }
-   end 
-
-   def self.account(space_id)
-
-      sql query
-
-
-      Account.new([])
-
+   end
 
 end
