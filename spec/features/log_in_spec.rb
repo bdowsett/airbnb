@@ -14,6 +14,7 @@ feature 'log in' do
     fill_in :username, with: 'Mr Dodgey' 
     fill_in :password, with: 'Dodgey_is_best'
     click_button 'Log in'
+    click_link 'Return home'
     
     expect(page).to have_content 'Welcome Mr Dodgey'
 

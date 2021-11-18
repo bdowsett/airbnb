@@ -20,6 +20,7 @@ Welcome <%=@username%>
      <% @listing.each do |x|%>
      <h1><%= x.name %><br></h1>
      <h2><%= x.desc %><br></h2>
+     <h2><%= Space.find_account_username(x.account_id)%>
      <h2 class="location">Location: <%= x.location %><br></h2>
      £<%= x.price %> per night 
      <%end%>

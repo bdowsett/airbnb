@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/bendowsett/Desktop/Projects/airbnb/app.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/app.rb": {
         "lines": [
           1,
           1,
@@ -16,9 +16,9 @@
           null,
           null,
           1,
-          9,
-          9,
-          9,
+          10,
+          10,
+          10,
           null,
           null,
           1,
@@ -76,7 +76,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/lib/account.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/lib/account.rb": {
         "lines": [
           1,
           null,
@@ -130,7 +130,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/account_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/account_spec.rb": {
         "lines": [
           1,
           null,
@@ -145,7 +145,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/book_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/book_spec.rb": {
         "lines": [
           1,
           1,
@@ -156,7 +156,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/add_a_new_space_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/add_a_new_space_spec.rb": {
         "lines": [
           1,
           null,
@@ -177,7 +177,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/check_if_date_is_available_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/check_if_date_is_available_spec.rb": {
         "lines": [
           1,
           null,
@@ -218,28 +218,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/create_an_account_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/log_in_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/create_an_account_spec.rb": {
         "lines": [
           1,
           null,
@@ -255,17 +234,12 @@
           null,
           1,
           1,
-          1,
-          1,
-          null,
-          1,
-          null,
           null,
           null,
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/features/make_booking_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/log_in_spec.rb": {
         "lines": [
           1,
           null,
@@ -283,6 +257,33 @@
           1,
           1,
           1,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/make_booking_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           1,
@@ -292,7 +293,7 @@
           null
         ]
       },
-      "/Users/bendowsett/Desktop/Projects/airbnb/spec/space_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/space_spec.rb": {
         "lines": [
           null,
           null,
@@ -305,6 +306,6 @@
         ]
       }
     },
-    "timestamp": 1637230741
+    "timestamp": 1637231437
   }
 }

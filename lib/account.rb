@@ -1,11 +1,12 @@
 require 'pg'
 
 class Account 
-	attr_reader :username, :email, :mob, :password
+	attr_reader :username, :email, :mob, :password, :id
 
 
-	def initialize(username, email, mob, password)
-			@username = username 
+	def initialize(id, username, email, mob, password)
+			@id = id
+		    @username = username 
 			@email = email 
 			@mob = mob 
 			@password = password
@@ -30,7 +31,7 @@ class Account
 			end
 			result = connection.exec("SELECT * FROM accounts;")
 			result.map { |account| Account.new(
-			account['username'], account['email'], account['mob'].to_i, account['password']) }
+			account['id'], account['username'], account['email'], account['mob'].to_i, account['password']) }
 	end 
 
 	def self.valid_account(username, password)
@@ -45,6 +46,8 @@ class Account
 		end
 		return :login_failed
 	end
+
+	
 	
 end 
 
