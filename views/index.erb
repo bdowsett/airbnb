@@ -1,32 +1,26 @@
+
+
+<div class = "header">
+
 <% if @username.nil? %>
-<a href="/log_in">
-     <button>Log in</button>
-   </a>
+<a href="/log_in"><button>Log in</button></a>
 <%  else %>
 Welcome <%=@username%>
 <%  end %>
 
+<a href="/add_space"><button>Add listing</button></a>
 
-<div>
-<a href="/add_space">
-       <button>Add listing</button>
-     </a>
+<a href="/book_space"><button>Make booking</button></a>
 
-<a href="/book_space">
-       <button>Make booking</button>
-     </a>
-</div>
-
-<a href="/create_account">
-       <button>Create an account</button>
-     </a>
+<a href="/create_account"><button>Create an account</button></a>
 </div>
 
 <div>
+<h1 class= "title">Listings</h1>
      <% @listing.each do |x|%>
-     <%= x.name %><br>
-     <%= x.desc %><br>
-     <%= x.location %><br>
-     <%= x.price %><br>
+     <h1><%= x.name %><br></h1>
+     <h2><%= x.desc %><br></h2>
+     <h2 class="location">Location: <%= x.location %><br></h2>
+     £<%= x.price %> per night 
      <%end%>
 </div>
