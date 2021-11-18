@@ -5,7 +5,7 @@
 <% if @username.nil? %>
 <a href="/log_in"><button>Log in</button></a>
 <%  else %>
-Welcome <%=@username%>
+<div class= "welcome">Welcome <%=@username%></div>
 <%  end %>
 
 <a href="/add_space"><button>Add listing</button></a>
@@ -20,7 +20,7 @@ Welcome <%=@username%>
      <% @listing.each do |x|%>
      <h1><%= x.name %><br></h1>
      <h2><%= x.desc %><br></h2>
-     <h2><%= Space.find_account_username(x.account_id)%>
+     <h2><%= Account.find_account_username(x.account_id)%>
      <h2 class="location">Location: <%= x.location %><br></h2>
      £<%= x.price %> per night 
      <%end%>

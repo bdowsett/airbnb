@@ -22,7 +22,7 @@ class Airbnb < Sinatra::Base
   end
   
   post '/add_space' do
-    account_id = Space.find_account_id(session[:current_username])
+    account_id = Account.find_account_id(session[:current_username])
     Space.create(params[:space_name], params[:description], params[:location], params[:price], account_id)
     redirect '/'
   end
@@ -32,8 +32,9 @@ class Airbnb < Sinatra::Base
   end
 
   post '/book_space' do
+    account_id = Account.find_account_id(session[:current_username])
+    session[:booking] = Booking.create(params[:space_name], params[:date], account_id)
     
-    session[:booking] = Booking.create(params[:space_name], params[:date])
     redirect '/booking_confirmation'
   end
 

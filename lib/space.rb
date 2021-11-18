@@ -34,21 +34,4 @@ class Space
         space['id'], space['name'], space['description'], space['location'], 
         space['price'], space['account_id']) }
    end
-
-
-   def self.find_account_id(username)
-		accounts = Account.all
-      
-      accounts.each do |account|
-         print account.id
-      return account.id.to_i if account.username == username
-      end
-	end
-
-   def self.find_account_username(account_id)
-		accounts = Account.all
-      accounts.each do |account|
-      return account.username if account.id == account_id.to_s
-      end
-	end
-end
+end 

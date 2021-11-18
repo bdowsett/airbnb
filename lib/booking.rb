@@ -1,20 +1,23 @@
 require 'pg'
 
+
 class Booking
-    attr_reader :name, :date
-    def initialize(name, date)
+    attr_reader :name, :date, :account_id
+    def initialize(name, date, account_id)
         @name = name 
         @date = date
+        @account_id = account_id
+
     end 
     
-    def self.create(name, date)
+    def self.create(name, date, account_id)
         if ENV['RACK_ENV'] == 'test'
             connection = PG.connect(dbname: 'airbnb_test')
          else
             connection = PG.connect(dbname: 'airbnb')
          end
             Booking.all.each { |booking| return :booking_failed if booking.date == date && booking.name == name }
-            connection.exec_params('INSERT INTO bookings (name, date) VALUES ($1, $2);', [name, date])
+            connection.exec_params('INSERT INTO bookings (name, date, account_id) VALUES ($1, $2, $3);', [name, date, account_id])
             return :booking_successful
     end
 
