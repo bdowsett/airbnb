@@ -23,9 +23,7 @@ class Airbnb < Sinatra::Base
   
   post '/add_space' do
     account_id = Space.find_account_id(session[:current_username])
-    p account_id
     Space.create(params[:space_name], params[:description], params[:location], params[:price], account_id)
-    p Space.create(params[:space_name], params[:description], params[:location], params[:price], account_id)
     redirect '/'
   end
 

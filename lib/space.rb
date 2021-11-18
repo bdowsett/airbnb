@@ -48,7 +48,7 @@ class Space
    def self.find_account_username(account_id)
 		accounts = Account.all
       accounts.each do |account|
-      return account.username if account.id == account_id
+      return account.username if account.id == account_id.to_s
       end
 	end
 end
