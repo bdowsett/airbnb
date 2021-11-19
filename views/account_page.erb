@@ -1,5 +1,19 @@
-Welcome to your account page, <%= @name %><br>
+Welcome to your account page, <%= @name %><br><br>
 
-<a href="/messages"><button>Messages</button></a>
+<a href="/messages"><button>Messages</button></a><br><br>
 
 <a href="/"><button>Return home</button></a>
+
+
+<h1>Your places</h1>
+<%@listing.each do |space|%>
+
+<%if space.account_id == Account.find_account_id(@name).to_s%>
+Place name:
+<%= space.name %><br>
+Description:
+<%= space.desc%>
+<%end%>
+<%end%>
+
+     

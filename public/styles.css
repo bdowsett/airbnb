@@ -1,5 +1,5 @@
 body {
-    background-color: #edeff0;
+    background-color: #ffffff;
     font-family: 'Lora', serif;
     padding: 40px;
     text-align: center;
@@ -7,9 +7,15 @@ body {
     font-size: 18px;
   }
   .header {
-    
     text-align: center;
-    background-color: #dcdde1;    
+    background-color: #ffffff;  
+    width: 50%;
+    margin: 0 auto;
+    
+    padding: 15px 50px;
+    border-radius: 5px;
+   
+    margin-bottom: 30px;  
   }
 
 
@@ -37,7 +43,7 @@ body {
   button,
   input[type="submit"]{
     display: inline-block;
-    background-color: #e15258;
+    background-color: #89dccc;
     color: #fff;
     text-transform: uppercase;
     font-weight: bold;
@@ -51,11 +57,12 @@ body {
     border: none;
   }
  
-  div {
+ .listing {
     text-align: left;
-    width: 50%;
+    width:50%;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: 
+    #c8dcd8;
     padding: 15px 50px;
     border-radius: 5px;
     border-bottom: solid 2px #ddd;
@@ -70,17 +77,57 @@ body {
 
   .location {
       font-weight: bold;
-
-
   }
 
   .welcome {
     text-align: center;
     background-color: #dcdde1;   
   }
+
+  .navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    padding:  10px;
+    width: 50%
+  }
+
+  .logo {
+    float: center;
+    
+  }
+
+  .footer {
+    overflow: hidden;
+   
+    background-color: #ffffff;
+    margin-top: 30px;
+    padding: 20px 10px;
+  }
   
- 
+  .footer-right a{
+    
+    float: right;
+    color: black;
+    text-align: center;
+    padding: 12px;
   
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+   .copyright {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 12px;
+    border-radius: 4px;
+   }
 
 
  

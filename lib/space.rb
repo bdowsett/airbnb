@@ -35,3 +35,9 @@ class Space
         space['price'], space['account_id']) }
    end
 end 
+
+
+
+
+#find acct id self.find_account_id(username) pass session[current_username]
+#account_id = self.find_account_id(username) pass session[current_username]

@@ -64,10 +64,11 @@ class Airbnb < Sinatra::Base
     session[:logged_in] = Account.valid_account(params[:username], params[:password])
     #user logged in
     session[:current_username] = params[:username] if session[:logged_in] == :account_page
-    redirect '/login_confirmation'
+    redirect '/account_page'
   end
 
-  get '/login_confirmation' do
+  get '/account_page' do
+    @listing = Space.all
     @name = session[:current_username]
     erb session[:logged_in]
   end
