@@ -15,6 +15,6 @@ feature "Account page view" do
         click_button 'Log in'
 
         expect(page).to have_content "Welcome to your account page, Mr Dodgey"
-        expect(page).to have_link "Messages"
+        
     end 
 end 

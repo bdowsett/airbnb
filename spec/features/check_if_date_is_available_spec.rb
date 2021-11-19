@@ -26,7 +26,7 @@ feature 'User can check if date is available to book' do
         click_button 'Add space'
 
         click_link 'Make booking'
-        fill_in :space_name, with: 'Dodgey Cottage' 
+        select 'Dodgey Cottage', from: 'space_name' 
         fill_in :date, with: Date.today + 1
         click_button 'Book space'
 
@@ -34,7 +34,7 @@ feature 'User can check if date is available to book' do
 
 
         click_link 'Make booking'
-        fill_in :space_name, with: 'Dodgey Cottage' 
+        select 'Dodgey Cottage', from: 'space_name' 
         fill_in :date, with: Date.today + 1
         click_button 'Book space'
 

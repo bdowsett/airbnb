@@ -4,8 +4,10 @@ Welcome to your account page, <%= @name %><br><br>
 
 
 <h1>Your places</h1>
+<%if @listing.select { |listing| listing.account_id == Account.find_account_id(@name).to_s }.empty?%>
+   No listings
+<%else%>
 <%@listing.each do |space|%>
-
 <%if space.account_id == Account.find_account_id(@name).to_s%>
 <div>
 Place name:
@@ -13,6 +15,7 @@ Place name:
 Description:
 <%= space.desc%><br><br>
 </div>
+<%end%>
 <%end%>
 <%end%>
 

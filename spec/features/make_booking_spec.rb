@@ -26,7 +26,7 @@ feature 'User is able to make a booking' do
         click_button 'Add space'
 
         click_link 'Make booking'
-        fill_in :space_name, with: 'Dodgey Cottage'
+        select 'Dodgey Cottage', from: 'space_name'
         fill_in :date, with: '25/12/2021'
         click_button 'Book space'
 

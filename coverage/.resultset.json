@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ben/gitProjects/airbnb/app.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/app.rb": {
         "lines": [
           1,
           1,
@@ -35,6 +35,7 @@
           null,
           1,
           3,
+          3,
           null,
           null,
           1,
@@ -73,6 +74,8 @@
           null,
           null,
           1,
+          6,
+          6,
           6,
           6,
           null,
@@ -91,7 +94,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/account_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/account_spec.rb": {
         "lines": [
           1,
           null,
@@ -106,7 +109,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/book_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/book_spec.rb": {
         "lines": [
           1,
           1,
@@ -120,7 +123,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/account_page_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/account_page_spec.rb": {
         "lines": [
           1,
           1,
@@ -139,45 +142,12 @@
           1,
           null,
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/home/ben/gitProjects/airbnb/spec/features/add_a_new_space_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           null,
           null,
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/check_if_date_is_available_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/add_a_new_space_spec.rb": {
         "lines": [
           1,
           null,
@@ -195,6 +165,39 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/check_if_date_is_available_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -229,7 +232,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/create_an_account_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/create_an_account_spec.rb": {
         "lines": [
           1,
           null,
@@ -250,7 +253,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/log_in_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/log_in_spec.rb": {
         "lines": [
           1,
           null,
@@ -277,7 +280,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/log_out_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/log_out_spec.rb": {
         "lines": [
           1,
           1,
@@ -303,7 +306,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/features/make_booking_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/features/make_booking_spec.rb": {
         "lines": [
           1,
           null,
@@ -345,7 +348,7 @@
           null
         ]
       },
-      "/home/ben/gitProjects/airbnb/spec/space_spec.rb": {
+      "/Users/willsharkey/Desktop/full_course/airbnb/spec/space_spec.rb": {
         "lines": [
           null,
           null,
@@ -360,6 +363,6 @@
         ]
       }
     },
-    "timestamp": 1637254269
+    "timestamp": 1637332495
   }
 }

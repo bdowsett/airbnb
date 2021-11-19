@@ -29,6 +29,7 @@ class Airbnb < Sinatra::Base
   end
 
   get '/book_space' do
+    @listings = Space.all
     erb :book_space
   end
 
