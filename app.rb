@@ -68,6 +68,7 @@ class Airbnb < Sinatra::Base
   end
 
   get '/account_page' do
+    @booking = Booking.all
     @listing = Space.all
     @name = session[:current_username]
     erb session[:logged_in]

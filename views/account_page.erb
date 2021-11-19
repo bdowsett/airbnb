@@ -1,7 +1,5 @@
 Welcome to your account page, <%= @name %><br><br>
 
-<a href="/messages"><button>Messages</button></a><br><br>
-
 <a href="/"><button>Return home</button></a>
 
 
@@ -9,11 +7,29 @@ Welcome to your account page, <%= @name %><br><br>
 <%@listing.each do |space|%>
 
 <%if space.account_id == Account.find_account_id(@name).to_s%>
+<div>
 Place name:
-<%= space.name %><br>
+<b><%= space.name %></b><br><br>
 Description:
-<%= space.desc%>
+<%= space.desc%><br><br>
+</div>
 <%end%>
 <%end%>
+
+
+
+<h1>Your Bookings</h1>
+<%if @booking.select { |booking| booking.account_id == Account.find_account_id(@name).to_s }.empty?%>
+   No Bookings
+<%else%>
+<%@booking.each do |booking|%>
+<%if booking.account_id == Account.find_account_id(@name).to_s%>
+<%=booking.name%>: <%=booking.date%><br>
+<%end%>
+<%end%>
+<%end%>
+
+
+
 
      
