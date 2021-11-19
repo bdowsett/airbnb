@@ -1,4 +1,4 @@
-Welcome to your account page, <%= @name %><br><br>
+<h1>Welcome to your account page <%= @name %>!</h1><br><br>
 
 <a href="/"><button>Return home</button></a>
 
@@ -13,7 +13,8 @@ Welcome to your account page, <%= @name %><br><br>
 Place name:
 <b><%= space.name %></b><br><br>
 Description:
-<%= space.desc%><br><br>
+<%= space.desc[0..50]%>...<br><br>
+--------- 
 </div>
 <%end%>
 <%end%>
@@ -28,6 +29,7 @@ Description:
 <%@booking.each do |booking|%>
 <%if booking.account_id == Account.find_account_id(@name).to_s%>
 <%=booking.name%>: <%=booking.date%><br>
+ --------- 
 <%end%>
 <%end%>
 <%end%>
